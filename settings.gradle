@@ -1,0 +1,7 @@
+pluginManagement {
+    repositories {
+        maven { url = uri('https://jpos.org/maven') }
+        gradlePluginPortal()
+        mavenLocal()
+    }
+}

@@ -1,0 +1,17 @@
+plugins {
+    id 'org.jpos.jposapp' version '0.0.6-SNAPSHOT'
+    id 'java-library'
+}
+
+group = 'org.jpos.jposapp'
+version = '0.0.1-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven { url = uri('https://jpos.org/maven') }
+}
+
+dependencies {
+    implementation 'org.jpos:jpos:3.0.0-SNAPSHOT'
+}
+
