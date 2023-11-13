@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<logger name="Q2" class="org.jpos.q2.qbean.LoggerAdaptor">
+<logger name="Q2">
   <property name="redirect" value="stdout, stderr" />
   <log-listener class="org.jpos.util.SimpleLogListener" />
 
