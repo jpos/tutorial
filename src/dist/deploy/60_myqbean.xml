@@ -1,2 +1,2 @@
-<myqbean class="org.jpos.tutorial.MyQBean" />
+<myqbean class="org.jpos.tutorial.MyQBean" logger="Q2" />
 

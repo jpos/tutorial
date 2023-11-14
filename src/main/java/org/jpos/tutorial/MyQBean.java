@@ -1,44 +1,31 @@
 package org.jpos.tutorial;
 
-import org.jpos.q2.QBean;
+import org.jpos.q2.QBeanSupport;
 
-public class MyQBean implements MyQBeanMBean {
-    int state;
+public class MyQBean extends QBeanSupport {
 
     @Override
-    public void init() {
-        state = QBean.STARTING;
-        printState();
+    protected void initService() {
+        logState();
     }
 
     @Override
-    public void start() {
-        state = QBean.STARTED;
-        printState();
+    protected void startService() {
+        logState();
     }
 
     @Override
-    public void stop()  {
-        state = QBean.STOPPED;
-        printState();
+    protected void stopService()  {
+        logState();
     }
 
     @Override
-    public void destroy() {
-        state = QBean.DESTROYED;
+    protected void destroyService() {
+        logState();
     }
 
-    @Override
-    public int getState() {
-        return state;
-    }
-
-    @Override
-    public String getStateAsString() {
-        return state >= 0 ? QBean.stateString[state] : "Unknown";
-    }
-
-    private void printState() {
-        System.out.println (getClass().getCanonicalName() + ":" + getStateAsString());
+    private void logState() {
+        getLog().info (getName() + ":" + getStateAsString());
     }
 }
+
