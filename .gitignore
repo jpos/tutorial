@@ -17,3 +17,6 @@
 .gradle
 build
 
+# Local worktrees
+worktrees
+
