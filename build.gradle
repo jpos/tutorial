@@ -1,11 +1,11 @@
 plugins {
-    id 'org.jpos.jposapp' version '0.0.10'
+    id 'org.jpos.jposapp' version '0.0.12'
     id 'java-library'
     id 'idea'
 }
 
 group = 'org.jpos.jposapp'
-version = '0.0.1-SNAPSHOT'
+version = '3.0.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
@@ -13,6 +13,6 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.jpos:jpos:3.0.0-SNAPSHOT'
+    implementation 'org.jpos:jpos:3.0.0'
 }
 
