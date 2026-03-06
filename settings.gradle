@@ -1,6 +1,13 @@
 pluginManagement {
     repositories {
         gradlePluginPortal()
+        mavenCentral()
+        maven { url = uri('https://jpos.org/maven') }
     }
 }
 
+rootProject.name = 'jpos-tutorials'
+
+include 'tutorials:qbean-primer'
+include 'tutorials:qbean-support'
+include 'tutorials:qserver'

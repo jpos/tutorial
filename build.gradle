@@ -1,18 +1,35 @@
 plugins {
-    id 'org.jpos.jposapp' version '0.0.12'
-    id 'java-library'
+    id 'org.jpos.jposapp' version '0.0.16' apply false
     id 'idea'
 }
 
-group = 'org.jpos.jposapp'
-version = '3.0.0-SNAPSHOT'
+group = 'org.jpos.tutorials'
+version = '3.0.1-SNAPSHOT'
 
-repositories {
-    mavenCentral()
-    maven { url = uri('https://jpos.org/maven') }
+subprojects {
+    apply plugin: 'java-library'
+    apply plugin: 'org.jpos.jposapp'
+
+    java {
+        toolchain {
+            languageVersion = JavaLanguageVersion.of(25)
+        }
+    }
+
+    group = rootProject.group
+    version = rootProject.version
+
+    repositories {
+        mavenCentral()
+        maven { url = uri('https://jpos.org/maven') }
+        mavenLocal()
+    }
+
+    dependencies {
+        implementation 'org.jpos:jpos:3.0.1-SNAPSHOT'
+    }
+
+    jpos {
+        distDir.set('src/dist')
+    }
 }
-
-dependencies {
-    implementation 'org.jpos:jpos:3.0.0'
-}
-

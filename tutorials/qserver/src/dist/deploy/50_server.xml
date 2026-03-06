@@ -1,0 +1,5 @@
+<qserver logger="Q2" name="qserver">
+ <attr name="port" type="java.lang.Integer">${qserver.port}</attr>
+ <channel class="org.jpos.iso.channel.XMLChannel" logger="Q2" packager="org.jpos.iso.packager.XMLPackager" />
+</qserver>
+
