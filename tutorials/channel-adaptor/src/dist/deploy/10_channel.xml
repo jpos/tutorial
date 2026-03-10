@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <channel-adaptor name="upstream" logger="Q2">
-  <channel class="org.jpos.iso.channel.XMLChannel"
-           logger="Q2"
-           packager="org.jpos.iso.packager.XMLPackager"
-           host="${upstream.host}"
-           port="${upstream.port}" />
+  <channel class="org.jpos.iso.channel.XMLChannel" logger="Q2">
+    <property name="packager" value="org.jpos.iso.packager.XMLPackager"/>
+    <property name="host"     value="${upstream.host}"/>
+    <property name="port"     value="${upstream.port}"/>
+  </channel>
   <in>upstream-send</in>
   <out>upstream-receive</out>
   <reconnect-delay>10000</reconnect-delay>
