@@ -2,9 +2,9 @@
 
 <qserver name="server" logger="Q2">
   <attr name="port" type="java.lang.Integer">${server.port}</attr>
-  <channel class="org.jpos.iso.channel.XMLChannel"
-           packager="org.jpos.iso.packager.XMLPackager"
-           logger="Q2" />
+  <channel class="org.jpos.iso.channel.XMLChannel" logger="Q2">
+    <property name="packager" value="org.jpos.iso.packager.XMLPackager"/>
+  </channel>
 
   <request-listener class="org.jpos.iso.IncomingListener" logger="Q2" realm="incoming">
     <property name="queue"   value="TXN"   />
