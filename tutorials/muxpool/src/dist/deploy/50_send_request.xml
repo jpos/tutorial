@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<send-request class="org.jpos.tutorial.SendRequest" logger="Q2" name="send-request">
+  <property name="mux"      value="upstream" />   <!-- the pool -->
+  <property name="interval" value="60000" />
+  <property name="timeout"  value="30000" />
+</send-request>
