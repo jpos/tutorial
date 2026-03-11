@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<qmux name="upstream" logger="Q2">
+<qmux name="upstream-mux" logger="Q2">
   <in>upstream-receive</in>
   <out>upstream-send</out>
   <ready>upstream.ready</ready>
