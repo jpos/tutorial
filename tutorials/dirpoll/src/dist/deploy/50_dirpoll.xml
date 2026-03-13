@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<dir-poll class="org.jpos.q2.iso.DirPollAdaptor" logger="Q2" name="dirpoll" realm="dirpoll">
+  <attr name="path">dirpoll</attr>
+  <attr name="pollInterval" type="java.lang.Long">1000</attr>
+  <attr name="priorities">.req *</attr>
+  <attr name="processor">org.jpos.tutorial.EchoProcessor</attr>
+
+  <property name="archive"           value="true"        />
+  <property name="archive.timestamp" value="true"        />
+  <property name="archive.compress"  value="false"       />
+</dir-poll>
