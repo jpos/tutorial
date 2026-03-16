@@ -3,4 +3,5 @@
  <channel class="org.jpos.iso.channel.XMLChannel" logger="Q2"
    packager="org.jpos.iso.packager.XMLPackager">
  </channel>
+ 	 <request-listener class="org.jpos.tutorial.Handle2800" logger="Q2" />
 </qserver>
