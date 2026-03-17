@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <logon-manager class="org.jpos.tutorial.LogonManager" logger="Q2" name="logon-manager">
-  <property name="mux"            value="upstream-a" />
-  <property name="mux"            value="upstream-b" />
+  <property name="mux"            value="upstream-a-mux" />
+  <property name="mux"            value="upstream-b-mux" />
   <property name="timeout"        value="30000" />
   <property name="logon-interval" value="86400000" />   <!-- 24 hours -->
   <property name="echo-interval"  value="60000" />      <!-- 1 minute  -->
