@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <mux class="org.jpos.q2.iso.MUXPool" logger="Q2" name="upstream">
-  <muxes>upstream-a upstream-b</muxes>
+  <muxes>upstream-a-mux upstream-b-mux</muxes>
   <strategy>round-robin</strategy>
   <property name="check-enabled" value="true" />
 </mux>
