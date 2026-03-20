@@ -4,7 +4,7 @@ import org.jpos.iso.ISOException;
 import org.jpos.iso.ISOMsg;
 import org.jpos.iso.MUX;
 import org.jpos.q2.QBeanSupport;
-import org.jpos.util.ISOUtil;
+import org.jpos.iso.ISOUtil;
 import org.jpos.util.NameRegistrar;
 
 import java.util.concurrent.atomic.AtomicInteger;

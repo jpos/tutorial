@@ -7,7 +7,7 @@ import org.jpos.q2.QBeanSupport;
 import org.jpos.q2.iso.QMUX;
 import org.jpos.space.Space;
 import org.jpos.space.SpaceFactory;
-import org.jpos.util.ISOUtil;
+import org.jpos.iso.ISOUtil;
 import org.jpos.util.NameRegistrar;
 
 import java.util.Date;
