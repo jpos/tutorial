@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<channel-adaptor name="upstream" logger="Q2">
+<channel-adaptor name="upstream-channel" logger="Q2">
   <channel class="org.jpos.iso.channel.XMLChannel" logger="Q2" packager="org.jpos.iso.packager.XMLPackager">
     <property name="host"     value="${upstream.host}"/>
     <property name="port"     value="${upstream.port}"/>
