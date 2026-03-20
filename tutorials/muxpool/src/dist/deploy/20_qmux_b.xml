@@ -3,7 +3,7 @@
 <qmux name="upstream-b" logger="Q2">
   <in>upstream-b-receive</in>
   <out>upstream-b-send</out>
-  <ready>upstream-b.ready</ready>
+  <ready>upstream-b-channel.ready</ready>
   <unhandled>unhandled</unhandled>
   <key>11</key>
 </qmux>
