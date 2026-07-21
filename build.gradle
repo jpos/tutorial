@@ -1,5 +1,5 @@
 plugins {
-    id 'org.jpos.jposapp' version '0.0.18' apply false
+    id 'org.jpos.jposapp' version '0.0.19' apply false
     id 'idea'
 }
 
