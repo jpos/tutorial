@@ -8,6 +8,7 @@ version = '3.0.1-SNAPSHOT'
 
 subprojects {
     apply plugin: 'java-library'
+    extensions.extraProperties.set('target', providers.gradleProperty('target').getOrElse('devel'))
     apply plugin: 'org.jpos.jposapp'
 
     java {
